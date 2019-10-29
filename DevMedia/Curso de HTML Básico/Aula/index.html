@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello Pizza</title>
+    </head>
+    <body>
+        <header>
+            <h1>Hello Pizza</h1>
+
+            <ul>
+                <li>Home</li>
+                <li><a href="sobre.html" target="_blank">Sobre</a></li>
+                <li>Contato</li>
+            </ul>
+        </header>
+            
+        <section>
+            <ul>
+                <li>Qualidade</li>
+                <li>Sabor</li>
+                <li>Praticidade</li>
+                <li>Agilidade</li>
+            </ul>
+        </section>
+
+        <section> 
+            <h2>Sabores</h2>
+            <p>Conheça os nossos <strong>5 sabores</strong> de <em>pizza</em>!</p>
+
+            <img src="http://www.delonghi.com/Global/recipes/multifry/3.jpg" alt="Fotos de Pizza de vários sabores" />
+
+            <table border="1">
+                <tr>
+                    <th>Sabor</th>
+                    <th>Queijo e Molho</th>
+                    <th>Salada</th>
+                    <th>Carne</th>
+                    <th>Azeito/Champignon</th>
+                </tr>
+                <tr>
+                    <td>Mozzarella</td>
+                    <td rowspan="2">Sim</td>
+                    <td>Não</td>
+                    <td>Não</td>
+                    <td>Não</td>
+                </tr>
+                <tr>
+                    <td>Galinha</td>
+                    <td>Não</td>
+                    <td>Sim</td>
+                    <td>Não</td>
+                </tr>
+            </table>
+            
+            <q>Uma citação curta pode ser incluída usando uma tag de formatação para isto.</q>
+            <blockquote cite="http://www.wikipedia.com">
+                Ou você pode incluir uma citação mais longa e também colocar a referência
+                 externa indicando da onde aquela citação veio. Note como o formato
+                  do conteúdo desta tag se diferencia do formato apresentado pela citação
+                   menor anterior. Isto ocorre pois o blockquote é um elemento blocado,
+                    que ocupa toda a largura da tela.
+            </blockquote>
+
+        </section>
+
+        <section>
+            <h2>Contato</h2>
+            <form action="local" method="POST">
+                <label>Nome: </label>
+                <input type="text" name="nome" placeholder="Informe seu nome" />
+                <label>Email: </label>    
+                <input type="text" name="email" />
+                <label>Mensagem: </label>
+                <textarea name="mensagem"></textarea>
+                <input type="submit" value="Enviar Mensagem" />
+            </form>
+        </section>
+
+        <footer>
+            <p>Hello Pizza</p>
+        </footer>
+
+    </body>
+</html>

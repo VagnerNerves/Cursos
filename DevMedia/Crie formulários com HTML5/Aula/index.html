@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form method="GET" action="http://arquivo.devmedia.com.br/projeto/requisicao.php">
+        <fieldset>
+            <legend>Conta:</legend>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" />
+            </div>
+
+            <div>
+                <label>Senha:</label>
+                <input type="password" name="senha" />
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <div>
+                <label>Nome:</label>
+                <input type="text" placeholder="Ex: Vagner Nerves" name="nome" />
+            </div>
+
+            <div>
+                <label>Telefone:</label>
+                <input type="tel" placeholder="Ex: (14) 99999-9999" name="telefone" />
+            </div>
+
+            <div>
+                <label>Sexo:</label>
+                <input type="radio" id="masculino" value="masculino" name="sexo" checked />
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="feminino" value="feminino" name="sexo" />
+                <label for="feminino">Feminino</label>
+            </div>
+
+            <div>
+                <label>Data:</label>
+                <input type="date" name="data" />
+            </div>
+
+            <div>
+                <Label>Foto de perfil:</Label>
+                <input type="file" accept="image/*" name="foto" />
+            </div>
+        </fieldset>
+        
+        <fieldset>
+                <legend>Endereço:</legend>
+            <div>
+                <label>Rua:</label>
+                <input type="text" name="rua" />
+            </div>
+
+            <div>
+                <label>Complemento:</label>
+                <input type="text" name="complemento" />
+            </div>
+
+            <div>
+                <label>Número:</label>
+                <input type="number" min="1" max="9999" name="numero" />
+            </div>
+
+            <div>
+                <label>Cidade:</label>
+                <input type="text" name="cidade" />
+            </div>
+
+            <div>
+                <label>Estado:</label>
+                <select name="estado">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </select>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Anúncio:</legend>
+            <div>
+                <label>Como conheceu a Hello Pizza.</label>
+                <textarea maxlength="256" placeholder="Explique como nos conheceu." name="conheceu"></textarea>
+            </div>
+
+            <div>
+                <input type="checkbox" checked name="orfertas" />    
+                <label>Deseja receber ofertas por email</label>
+            </div>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <input type="submit" value="Enviar 2" />
+   </form> 
+</body>
+</html>

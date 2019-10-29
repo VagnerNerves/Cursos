@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="UTF-8">   
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <div id="app">
+            <button onclick="mostraAlerta()" >Me pressione</button>
+            <button onmouseover="mostraAlerta()" >Me pressione</button>
+
+            <!-- <input type="text" name="nome" id="nome" class="nome" /> -->
+            <input type="text" name="nome" />
+            <button class="botao">Adicionar</button>
+
+            <input id="nome2" />
+
+            <div class="box">
+
+            </div>
+        </div>   
+
+        <script>
+            function mostraAlerta() {
+                alert('Botão foi clicado');
+            }      
+
+            //var inputElement = document.getElementById('nome');
+            //var inputElement = document.getElementsByTagName('input');
+            //var inputElement = document.getElementsByClassName('nome');
+
+            //Usar sempre o queryselector
+            //var inputElement = document.querySelector('div#app input');
+            
+            var inputElement = document.querySelector('input[name=nome]');
+            var btnElement = document.querySelector('button.botao');
+
+            btnElement.onclick = function() {
+                var text = inputElement.value;
+
+                alert(text);
+            }
+
+            //console.log(inputElement);
+
+
+
+            //--------------------- Criando elementos 
+            var linkElement = document.createElement('a')
+            linkElement.href = 'https://www.youtube.com/c/VagnerNervesOficial';
+            //linkElement.setAttribute('href','https://www.youtube.com/c/VagnerNervesOficial');
+
+            var textElement = document.createTextNode('Acessar canal do Bonitão do Vagner hahaha kpsakpskpa');
+            linkElement.appendChild(textElement);
+
+            var containerElement = document.querySelector('#app');
+            containerElement.appendChild(linkElement);
+
+            var inputElement = document.querySelector('#nome2');
+            containerElement.removeChild(inputElement);   
+
+            //------------- Alteraneo estilos
+            var boxElement = document.querySelector('.box');
+
+            boxElement.style.width = 100;
+            boxElement.style.height = 100;
+            boxElement.style.backgroundColor = '#f00';
+        </script>
+    </body>
+</html>

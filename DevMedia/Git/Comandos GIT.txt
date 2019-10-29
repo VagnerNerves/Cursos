@@ -1,0 +1,175 @@
+Assim, após instalar o Git em sua máquina, os dois primeiros comandos a executar no prompt são:
+
+  git config --global user.name "Nome do usuario"
+  git config --global user.email e-mail@exemplo.com 
+
+Verificar as configurações salvas do usuario, email e outras configurações use o comando:
+
+  git config --list
+
+Para saber a configuração de uma determinada lista execute o comando:
+
+  git config user.email 
+  git config user.name 
+
+Saber os comandos do git:
+
+  git help
+
+No diretório em que você pretende CRIAR ou já criou o projeto, execute:
+
+  git init
+
+Para saber o STATUS do repositorio digite:
+
+  git status
+
+Para INDEXAR um arquivo no git utilize o comando:
+
+  git add NomeDoArquivo.extensão
+
+Para INDEXAR tudo que esta na pasta no git utilize o comando:
+
+  git add .
+
+Para COMITAR uma alteração execute o comando:
+
+  git commit -m “Mensagem descritiva das mudanças realizadas.”
+
+Verificar se deu tudo certo o COMITAR:
+
+  git log
+
+Verificar algum comite de alguem ou descrição do comite:
+
+  git log --author="NomeDoAutor"
+  
+  //Este pesquisa a descrição do comit:
+  git log --grep="Descriçao a ser pesquisada"
+
+Criar um BRANCH, para teste/alteração/verificação:
+
+  git branch nomeDoBranch
+  //OU
+  git branch -b nomeDoBranch
+
+Listar os BRANCH criados:
+  
+  git branch
+
+Para ACESSAR o BRANCH execute:
+
+  git checkout nomeDoBranch
+
+Alterar nome da BRANCH:
+
+  git branch --move NomeDaBranch NomeDaNovaBranch
+
+Remover uma Branch:
+
+  git branch -d NomeDaBranch
+  //OU
+  git branch --delete NomeDaBranch
+
+Exibir as MUDANÇAS que foram feitas no nosso arquivo:
+
+  git diff
+
+  //Ver mudança de só um arquivo
+  git diff NomeDoArquivo
+
+  //Exibir as mudanças que foram feitas no nosso arquivo na stage area:
+  git diff --staged
+
+REMOÇÃO de arquivos por comando git:
+  
+  //Para colocar na stage area a remoção e remover automatico da pasta
+  git rm NomedoArquivo 
+
+RENOMEAR arquivos no git:
+
+  git mv NomeDoArquivoOriginal NovoNomeDoArquivo
+
+MOVER arquivos no git:
+
+  git mv NomeDoArquivoOriginal Diretorio/NomeDoarquivoOriginal
+
+ALTERAR a mensagem do ultimo Commit:
+
+  git commit --amend
+
+DESFAZER alterações:
+  
+  //Na are de trabalho
+  git checkout -- NomedoArquivo
+
+  //Na area de Stage
+  git reset HEAD NomeDoArquivo
+
+Defazer COMMITS:
+
+  //Fazer o commiT no ultimo comite do repositorio Alterando o conteudo e a mensagem
+  git commit --amend -m "Mensagem" 
+
+REMOVER arquivos nao monitorados pelo git:
+
+  //verificar o que vai ser removido
+  git clean -n  
+
+  //Remover os arquivo
+  git clean -f
+
+Recuperar uma versão especifica do repositorio/Commit:
+
+  git checkout NumeroDoComit -- NomeDaUnit
+
+Desfazer os Commit:
+
+  //Desfazer o ultimo commit, apontando o head para outro:
+  git reset --soft NumeroDoComit
+
+  //Desfazer o ultimo commit e Stage area, apontando o head para outro:
+  git reset --mixed NumeroDocomit
+
+  //Desfazer o ultimo commit e Stage Area e Area de trabalho, apontando o head para o outro:
+  git reset --hard NumeroDoComit
+
+//Fazer Merger
+  git merge NomedoComid
+
+//Aborta merger
+  git merge --abort
+
+//Add repositorio online:
+  git remote add NomeQualquer(origin) URLdo Repositorio
+
+//remover repositorio
+  git remote rm NomeQualquer(origin)
+
+//Verificar repositorio na maquina
+  git remote
+
+//Verificar qual repositorio voce esta:
+  git remote -v
+
+//Publicar num repositorio remoto
+  git push -u NomeQualquer(origin) NomedaBranch
+
+//Clonar um projeto do repositorio
+  git clone URL
+  //ou
+  git clone URL NomeDaPastaNova
+
+//Exibir as branches do repositorio remoto
+  git branch -r
+  //Exibir todas
+  git branch -a
+
+//Buscar branch e coisas novas do repositorio
+  git fetch NomeQualquer(origin)
+
+//Git Fetch + Git Merge
+  git pull 
+
+  
+
