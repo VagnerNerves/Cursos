@@ -141,7 +141,7 @@ Desfazer os Commit:
   git merge --abort
 
 //Add repositorio online:
-  git remote add NomeQualquer(origin) URLdo Repositorio
+  git remote add NomeQualquer(origin) URLdoRepositorio
 
 //remover repositorio
   git remote rm NomeQualquer(origin)

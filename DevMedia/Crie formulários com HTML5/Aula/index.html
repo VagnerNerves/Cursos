@@ -11,12 +11,12 @@
             <legend>Conta:</legend>
             <div>
                 <label>Email:</label>
-                <input type="email" name="email" />
+                <input type="email" name="email" required /> <!-- Required torna obrigatorio o preenchimento -->
             </div>
 
             <div>
                 <label>Senha:</label>
-                <input type="password" name="senha" />
+                <input type="password" name="senha" minlength="2" maxlength="10" />
             </div>
         </fieldset>
 
