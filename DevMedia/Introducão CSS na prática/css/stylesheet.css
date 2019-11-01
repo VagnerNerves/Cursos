@@ -1,6 +1,11 @@
 /*Selecidoar um ID usa a "#" */
+/*Selecidoar de classe usa o "." */
+body{
+    background-color: #333;
+}
+
 #banner {
-    background-color: black;
+    background-color: #333;
     height: 75px;
     padding: 30px 70px 30px 70px;
 }
@@ -29,4 +34,66 @@
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase; 
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", sams-serif;
+}
+
+#sabores-pizzas h2{
+    color: #ffffff;
+    font-family: "Helvetica Neue", sams-serif;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 6;
+}
+
+#sabores-pizzas table{
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+
+}
+
+#sabores-pizzas table td,
+#sabores-pizzas table th
+{
+    border: 1px #000 solid;    
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 25px;
+}
+
+#sabores-pizzas .texto-negativo{
+    color: red;
+}
+
+#sabores-pizzas .texto-positivo{
+    color: green;
+}
+
+#copyright{
+    padding: 15px 0 10px 0;
+}
+
+#copyright a{
+    display: block;
+    text-align: center;
+
+}
+
+#copyright p{
+    color: #ffffff;
+    text-align: center; 
+    font-size: 12px;
+    font-family: "Helvetica Neue", sams-serif;   
+}
+
+#sabores-pizzas{
+    padding-bottom: 60px;
+    margin-top: 400px;
 }
