@@ -1,11 +1,15 @@
 /*Selecidoar um ID usa a "#" */
 /*Selecidoar de classe usa o "." */
 body{
-    background-color: #333;
+    background-color: #060606;
+    background-image: url(../img/background-pizza.png);
+    background-repeat: no-repeat;
+    background-size: cover;/*Utilizado para ficar em todo o local do background*/
+    margin: 0;
 }
 
 #banner {
-    background-color: #333;
+    background-color:rgba(0, 0, 0, 0.5);
     height: 75px;
     padding: 30px 70px 30px 70px;
 }
@@ -47,13 +51,14 @@ body{
     text-transform: uppercase;
     margin: 0;
     line-height: 6;
+    text-shadow: 2px -2px 10px #060606;
 }
 
 #sabores-pizzas table{
+    background-color: #2a2a2a;
     margin: 0 auto;
     width: 80%;
     border-collapse: collapse;
-
 }
 
 #sabores-pizzas table td,
@@ -77,6 +82,7 @@ body{
 }
 
 #copyright{
+    background-color: #060606;
     padding: 15px 0 10px 0;
 }
 
