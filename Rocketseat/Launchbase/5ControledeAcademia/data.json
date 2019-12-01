@@ -1,0 +1,46 @@
+{
+  "members": [
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "name": "VAGNER NERVES SANTOS",
+      "email": "vagnernervessantos@gmail.com",
+      "birth": 1576713600000,
+      "gender": "F",
+      "blood": "A+",
+      "weight": "1",
+      "height": "2",
+      "id": 2
+    },
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "name": "VAGNER NERVES SANTOS",
+      "email": "vagnernervessantos@gmail.com",
+      "birth": 1576195200000,
+      "gender": "M",
+      "blood": "A+",
+      "weight": "1",
+      "height": "2",
+      "id": 3
+    }
+  ],
+  "instructors": [
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "birth": 1573084800000,
+      "created_at": 1574594484353,
+      "id": 1,
+      "name": "Vagner Nerves Santos",
+      "services": "sasas, dã",
+      "gender": "M"
+    },
+    {
+      "id": 5,
+      "avatar_url": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "name": "Vagner Nerves Santos",
+      "birth": 470620800000,
+      "gender": "M",
+      "services": "sasa",
+      "created_at": 1574597843180
+    }
+  ]
+}
