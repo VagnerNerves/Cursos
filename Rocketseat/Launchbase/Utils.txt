@@ -1,0 +1,12 @@
+- Ferrameta do Node para receber do backend images
+	npm install multer
+
+
+
+- Programa do Bando de Dados
+	PostBird
+	Usuario: postgres
+	Senha: admin
+
+- Driagram de table que gera o script
+	www.dbdiagram.io
